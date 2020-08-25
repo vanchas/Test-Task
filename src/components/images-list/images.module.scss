@@ -1,0 +1,29 @@
+.images_list {
+	padding: 5em 3em;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	list-style: none;
+	gap: 0.5em;
+}
+
+.list_item_image {
+	min-height: 150px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	img {
+		max-width: 10em;
+		width: 100%;
+		@media screen and (max-width: 400px) {
+			max-width: none;
+		}
+		&:hover ~ div {
+			visibility: visible;
+		}
+	}
+}
+
+.empty_list_message {
+	text-align: center;
+	margin-top: 5em;
+}

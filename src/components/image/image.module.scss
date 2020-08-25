@@ -1,0 +1,41 @@
+.image_view {
+	padding: 1em;
+	.image_holder {
+		position: relative;
+		width: 400px;
+		max-width: 100%;
+		margin: 3em auto 0 auto;
+	}
+	img {
+		width: 100%;
+		display: block;
+		&:hover ~ div {
+			visibility: visible;
+		}
+	}
+	h2 {
+		text-align: center;
+	}
+	.tooltip_details {
+		display: grid;
+		justify-content: center;
+		grid-template-columns: repeat(2, auto);
+		dt {
+			font-weight: 600;
+		}
+	}
+}
+
+.image_control {
+	width: 500px;
+	max-width: 100%;
+	margin: 0 auto;
+	fieldset {
+		label {
+			padding: 0.2em 0;
+			display: grid;
+			grid-auto-flow: column;
+			gap: 0.5em;
+		}
+	}
+}

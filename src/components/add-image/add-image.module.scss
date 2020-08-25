@@ -1,0 +1,20 @@
+.add_new_image {
+	max-width: 700px;
+	width: 100%;
+	margin: 3em auto 0 auto;
+	padding: 1em;
+
+	& > button {
+		margin-bottom: 1em;
+	}
+	form {
+		display: grid;
+		gap: 0.5em;
+		input {
+			margin: 0 0.5em;
+		}
+		button {
+			width: fit-content;
+		}
+	}
+}
